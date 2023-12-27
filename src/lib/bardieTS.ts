@@ -111,7 +111,7 @@ class BardieTS {
   */
   async question(options: questionOptions): Promise<AIResponseData> {
     this.validateOptions(options);
-    const response = await this.makeRequest(options);
+    const response: AIResponse = await this.makeRequest(options);
     return response.data;
   }
 }
