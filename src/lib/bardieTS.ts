@@ -1,8 +1,5 @@
-
 import axios from "axios";
-import { AIResponse } from "../interfaces/AIResponse";
-import { AIResponseData } from "../interfaces/AIResponseData";
-import { questionOptions } from "../interfaces/questionOptions";
+import { questionOptions, AIResponse, AIResponseData } from "../interfaces";
 
 const baseurl = "https://bard.rizzy.eu.org";
 
