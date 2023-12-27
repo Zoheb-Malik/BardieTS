@@ -1,4 +1,4 @@
-import BardieTS from "../lib/bardieTS";
+import BardieTS from "../lib/BardieTS";
 
 const bard = new BardieTS();
 
@@ -13,3 +13,5 @@ export async function askQuestion() {
     console.error("Error:", error.message);
   }
 };
+
+askQuestion();
