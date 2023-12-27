@@ -116,4 +116,4 @@ class BardieTS {
   }
 }
 
-export default BardieTS;
+export = BardieTS;
