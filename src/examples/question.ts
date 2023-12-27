@@ -2,7 +2,7 @@ import BardieTS from "../lib/BardieTS";
 
 const bard = new BardieTS();
 
-export async function askQuestion() {
+async function askQuestion() {
   try {
     const options = {
       ask: "Keep it simple... What is Google Bard?"

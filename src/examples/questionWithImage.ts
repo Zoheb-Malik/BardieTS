@@ -2,7 +2,7 @@ import BardieTS from "../lib/BardieTS.js";
 
 const bard = new BardieTS();
 
-export async function askQuestionWithImage() {
+async function askQuestionWithImage() {
   try {
     const options = {
       ask: "Keep it simple... What is this image?",
