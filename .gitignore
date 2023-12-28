@@ -1,7 +1,7 @@
 dist/
 node_modules/
 .git/
-.github/
+.github/workflows
 .vscode/
 
 *-lock.*
