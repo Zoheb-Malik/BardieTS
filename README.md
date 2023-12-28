@@ -82,7 +82,9 @@ const BardieTS = require("bardie-ts");
 const bard = new BardieTS();
 
 async function askQuestion() {
-  const result = await bard.question({ ask: "Keep it simple... What is Google Bard?"});
+  const result = await bard.question({
+    ask: "Keep it simple... What is Google Bard?"
+  });
   console.log(result.content);
 }
 
