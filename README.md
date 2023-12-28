@@ -71,18 +71,10 @@ const BardieTS = require("bardie-ts");
 
 const bard = new BardieTS();
 
-const options = {
-  ask: "Keep it simple... What is Google Bard?"
-};
-
 async function askQuestion() {
-  try {
-    const result = await bard.question(options);
-    console.log(result.content);
-  } catch (error) {
-    console.error("Error:", error.message);
-  }
-};
+  const result = await bard.question({ ask: "Keep it simple... What is Google Bard?"});
+  console.log(result.content);
+}
 
 askQuestion();
 ```
@@ -122,19 +114,10 @@ const BardieTS = require("bardie-ts");
 
 const bard = new BardieTS();
 
-const options = {
-  ask: "Keep it simple... What is this image?",
-  image: "https://i.imgur.com/OgoPlnf.png"
-};
-
 async function askQuestionWithImage() {
-  try {
-    const result = await bard.question(options);
-    console.log(result.content);
-  } catch (error) {
-    console.error("Error:", error.message);
-  }
-};
+  const result = await bard.question({ ask: "Keep it simple... What is this image?", image: "https://i.imgur.com/OgoPlnf.png" });
+  console.log(result.content);
+}
 
 askQuestionWithImage();
 ```
