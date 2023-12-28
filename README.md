@@ -20,7 +20,7 @@ It provides powerful features for AI interactions, including the ability to answ
 
 # BardieTS Installation
 
-### 📂 npm, pnpm, and yarn
+### 📂 npm, pnpm, or yarn
 
 #### npm:
 
