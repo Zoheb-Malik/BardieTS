@@ -1,7 +1,9 @@
 dist/
 node_modules/
-
 .git/
-.vscode/
-*-lock.*
 .github/
+.vscode/
+
+*-lock.*
+
+bardie-ts-*.tgz
