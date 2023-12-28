@@ -8,7 +8,7 @@
 
 ## 📦 bardie-ts
 
-BardieTS is a multi-purpose package built with typescript that allows people to interact with the Google Bard API.
+BardieTS is a multi-purpose AI package built with typescript that allows people to interact with the Google Bard API.
 It provides simple, fast and powerful features for AI interactions, including the ability to answer questions and recognise image input, **without needing to set your own cookie!**
 
 ## 🔑 Key Features
