@@ -131,7 +131,10 @@ const BardieTS = require("bardie-ts");
 const bard = new BardieTS();
 
 async function askQuestionWithImage() {
-  const result = await bard.question({ ask: "Keep it simple... What is this image?", image: "https://i.imgur.com/OgoPlnf.png" });
+  const result = await bard.question({
+    ask: "Keep it simple... What is this image?",
+    image: "https://i.imgur.com/OgoPlnf.png"
+  });
   console.log(result.content);
 }
 
