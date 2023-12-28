@@ -1,4 +1,4 @@
-# BardieTS <a href="https://github.com/Zoheb-Malik/BardieTS"><img src="https://i.imgur.com/5wcvFUB.png" height="20px" alt="BardieTS"></a> AI
+# <a href="https://github.com/Zoheb-Malik/BardieTS"><img src="https://i.imgur.com/5wcvFUB.png" width="25px" height="25px" alt="BardieTS" /></a> BardieTS
 
 <p align="center">
   <a target="_blank" href="https://github.com/Zoheb-Malik/BardieTS">
@@ -6,21 +6,21 @@
   </a>
 </p>
 
-## bardie-ts
+## 📦 bardie-ts
 
 BardieTS is a multi-purpose package built with typescript that allows people to interact with the Google Bard API.
 It provides simple, fast and powerful features for AI interactions, including the ability to answer questions and recognise image input, **without needing to set your own cookie!**
 
-## Key Features
+## 🔑 Key Features
 
-- Answers question with AI assistance
-- Image recognition with descriptive responses
-- Simple to integrate into to any app
-- Designed with broad compatibility in mind and works with all major module types, including (but not limited to) CommonJS, AMD, UMD, and ES6 modules
+* 🤖 Answers question with AI assistance
+* 🖼️ Image recognition with descriptive responses
+* 👨‍💻 Simple to integrate into to any app
+* 🖋️ Designed with broad compatibility works with all major module types, including (but not limited to) CommonJS, AMD, UMD, and ES6
 
-# BardieTS Installation
+## 📂 BardieTS Installation
 
-### 📂 npm, pnpm, or yarn
+### npm, pnpm, OR yarn
 
 #### npm:
 
@@ -40,11 +40,9 @@ pnpm add bardie-ts
 yarn add bardie-ts
 ```
 
-# Simple Examples
+## 💡 Examples Of Use
 
-### **Example Question To Bard**
-
-#
+### Simple Question (Typescript)
 
 ```typescript
 import BardieTS from "bardieTS";
@@ -72,9 +70,7 @@ askQuestion();
 I can answer your questions, generate creative text formats, and help you with various tasks in a simple and informative way.
 Think of me as a friendly AI companion ready to assist you anytime!"
 
-### **Example Question With Image To Bard**
-
-#
+### Question With Image (Typescript)
 
 ```typescript
 import BardieTS from "bardieTS";
