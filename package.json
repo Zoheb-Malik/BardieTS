@@ -2,9 +2,9 @@
   "name": "bardie-ts",
   "version": "1.0.0",
   "description": "A powerful typescript library for interacting with the Google Bard API",
-  "main": "./dist/bardieTS.js",
-  "module": "./dist/BardieTS.mjs",
-  "types": "./dist/BardieTS.d.ts",
+  "main": "./dist/bardie-ts.js",
+  "module": "./dist/bardie-ts.mjs",
+  "types": "./dist/bardie-ts.d.ts",
   "scripts": {
     "question": "ts-node ./src/examples/question.ts",
     "questionWithImage": "ts-node ./src/examples/questionWithImage.ts",
