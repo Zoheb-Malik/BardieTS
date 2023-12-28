@@ -107,7 +107,13 @@ The stars are meant to represent creativity and knowledge, while the gray backgr
 If there are any bugs, please report them at [issues](https://github.com/Zoheb-Malik/BardieTS/issues/new) for visibility.
 
 **Disclaimer:**
-This project utilises a third-party API that interacts with Google's Bard API.
+This package utilises a third-party API that interacts with Google's Bard API.
 I have no affiliation with the creation of the endpoint (https://bard.rizzy.eu.org).
-It is important to note that the usage of this project should **not** be intended for commercial purposes or the provision of services for profit.
-BardieTS should be for educational, research, and experimental purposes only.
+It is important to note that the usage of this package should ideally **not** be intended for commercial purposes or the provision of services for profit.
+BardieTS should preferably be used along the lines of educational, research, or experimental purposes only.
+
+**Special Thanks:**
+I would like to extend a special thanks to @rizzlogy for his original "bardie" package, which served as the inspiration for the development of this advanced TypeScript version.
+This version aims to be accessible to a wide range of developers, making it easier for them to integrate AI interactions into their projects.
+
+I would also like to thank @underctrl-io for [their tutorial](https://www.youtube.com/watch?v=xnfdm-s8adI) on how to create and publish an npm package (the right way!)
