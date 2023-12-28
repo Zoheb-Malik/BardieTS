@@ -1,7 +1,7 @@
 {
   "name": "bardie-ts",
   "version": "1.0.0",
-  "description": "A powerful typescript library for interacting with the Google Bard API",
+  "description": "A powerful AI package (built using typescript) for interacting with the Google Bard API.",
   "main": "./dist/bardie-ts.js",
   "module": "./dist/bardie-ts.mjs",
   "types": "./dist/bardie-ts.d.ts",
