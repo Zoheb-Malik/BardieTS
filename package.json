@@ -1,5 +1,5 @@
 {
-  "name": "bardiets",
+  "name": "bardie-ts",
   "version": "1.0.0",
   "description": "A powerful typescript library for interacting with the Google Bard API",
   "main": "./dist/bardieTS.js",
