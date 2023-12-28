@@ -2,6 +2,8 @@
 
 ![BardieTS](https://socialify.git.ci/Zoheb-Malik/BardieTS/image?description=1&descriptionEditable=npm%20i%20bardie-ts%20%7C%20pnpm%20add%20bardie-ts%20%7C%20yarn%20add%20bardie-ts&font=Inter&language=1&logo=https%3A%2F%2Fsvgshare.com%2Fi%2F11JZ.svg&name=1&owner=1&pattern=Circuit%20Board&theme=Dark)
 
+![Discord](https://img.shields.io/discord/1189263776420208732?style=for-the-badge&logo=discord&logoColor=white&label=Discord&labelColor=black&color=blue&link=https%3A%2F%2Fdiscord.gg%2FNPJHEZXUDa)
+
 ## 📦 bardie-ts
 
 BardieTS is a multi-purpose AI package built with typescript that allows people to interact with the Google Bard API.
