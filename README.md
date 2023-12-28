@@ -1,4 +1,4 @@
-# <a href="https://github.com/Zoheb-Malik/BardieTS"><img src="https://i.imgur.com/5wcvFUB.png" width="25px" height="25px" alt="BardieTS" /></a> BardieTS
+# <a href="https://github.com/Zoheb-Malik/BardieTS"><img src="https://i.imgur.com/oMmzL9R.png" width="25px" height="25px" alt="BardieTS" /></a> BardieTS
 
 ![BardieTS](https://socialify.git.ci/Zoheb-Malik/BardieTS/image?description=1&descriptionEditable=npm%20i%20bardie-ts%20%7C%20pnpm%20add%20bardie-ts%20%7C%20yarn%20add%20bardie-ts&font=Inter&language=1&logo=https%3A%2F%2Fsvgshare.com%2Fi%2F11JZ.svg&name=1&owner=1&pattern=Circuit%20Board&theme=Dark)
 
