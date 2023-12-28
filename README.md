@@ -8,19 +8,19 @@
 
 ## bardie-ts
 
-BardieTS is a TypeScript library for interacting with the Google Bard API.
-It provides powerful features for AI interactions, including the ability to answer questions and recognise image input.
+BardieTS is a multi-purpose package built with typescript that allows people to interact with the Google Bard API.
+It provides simple, fast and powerful features for AI interactions, including the ability to answer questions and recognise image input, **without needing to set your own cookie!**
 
 ## Key Features
 
 - Answers question with AI assistance
 - Image recognition with descriptive responses
-- Easily integratable to any app
+- Simple to integrate into to any app
 - Designed with broad compatibility in mind and works with all major module types, including (but not limited to) CommonJS, AMD, UMD, and ES6 modules
 
 # BardieTS Installation
 
-### 📂 npm, pnpm, and yarn
+### 📂 npm, pnpm, or yarn
 
 #### npm:
 
