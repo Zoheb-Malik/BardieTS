@@ -17,7 +17,7 @@ It provides simple, fast and powerful features for AI interactions, including th
 * 🖼️ Image recognition with descriptive responses
 * 💻 Simple to integrate into to any app
 * 🖋️ Designed with broad compatibility works with all major module types, including (but not limited to) CommonJS, AMD, UMD, and ES6
-* 📝 Extremely well-documented codebase
+* 📄 Extremely well-documented codebase
 
 ## 📂 BardieTS Installation
 
@@ -65,7 +65,7 @@ async function askQuestion() {
 askQuestion();
 ```
 
-##### Response:
+#### Response:
 
 > "In a nutshell, I'm Google's AI helper you can chat with.
 I can answer your questions, generate creative text formats, and help you with various tasks in a simple and informative way.
@@ -94,15 +94,13 @@ async function askQuestionWithImage() {
 askQuestionWithImage();
 ```
 
-##### Response:
+#### Response:
 
 > "The image you sent me is the logo of Bard, a large language model chatbot developed by Google AI.
 The logo consists of two colorful stars, one in red and orange and the other in blue and green, on a gray background.
 The stars are meant to represent creativity and knowledge, while the gray background represents the real world. I hope this helps!"
 
-#
-
-# Notes
+## 📝 Final Notes
 
 If there are any bugs, please report them at [issues](https://github.com/Zoheb-Malik/BardieTS/issues/new) for visibility.
 
@@ -113,7 +111,7 @@ It is important to note that the usage of this package should ideally **not** be
 BardieTS should preferably be used along the lines of educational, research, or experimental purposes only.
 
 **Special Thanks:**
-I would like to extend a special thanks to @rizzlogy for his original "bardie" package, which served as the inspiration for the development of this advanced TypeScript version.
+I would like to extend a special thanks to [@rizzlogy](https://github.com/rizzlogy) for the original [bardie package](https://github.com/rizzlogy/bardie), which served as the inspiration for the development of this advanced TypeScript version.
 This version aims to be accessible to a wide range of developers, making it easier for them to integrate AI interactions into their projects.
 
-I would also like to thank @underctrl-io for [their tutorial](https://www.youtube.com/watch?v=xnfdm-s8adI) on how to create and publish an npm package (the right way!)
+I would also like to thank [@underctrl-io](https://github.com/underctrl-io) for [their tutorial](https://www.youtube.com/watch?v=xnfdm-s8adI) on how to create and publish an npm package (the right way!)
