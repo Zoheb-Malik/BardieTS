@@ -6,8 +6,8 @@
 
 ## 📦 bardie-ts
 
-BardieTS is a multi-purpose AI package built with typescript that allows people to interact with the Google Bard API.
-It provides simple, fast and powerful features for AI interactions, including the ability to answer questions and recognise image input, **without needing to set your own cookie!**
+BardieTS is a multi-purpose AI package built with typescript that allows people to interact with the Google Bard API, **without needing to set your own cookie!**
+It provides simple, fast and powerful features for AI interactions, including the ability to answer questions intelligently and recognise image inputs.
 
 ## 🔑 Key Features
 
@@ -51,7 +51,7 @@ To use BardieTS in typescript, create a file named `index.ts` in your project's 
 Once you have an `index.ts` file with the contents below, execute `ts-node index.ts` in your terminal.
 
 ```typescript
-import BardieTS from "bardieTS";
+import BardieTS from "bardie-ts";
 
 const bard = new BardieTS();
 
@@ -150,7 +150,10 @@ The stars are meant to represent creativity and knowledge, while the gray backgr
 If there are any bugs, please report them at [issues](https://github.com/Zoheb-Malik/BardieTS/issues/new) for visibility.
 
 **Disclaimer:**
-This package utilises a third-party API that interacts with Google's Bard API.
+This package utilises a third-party API that interacts with Google's Bard API, without needing to set your own cookie token.
+The API works without needing to set your own cookie because the endpoint randomly uses pre-existing ones to send requests.
+Given the above, it is highly **not recommended** to send any personal information to the AI.
+
 I have no affiliation with the creation of the endpoint (<https://bard.rizzy.eu.org>).
 It is important to note that the usage of this package should ideally **not** be intended for commercial purposes or the provision of services for profit.
 BardieTS should preferably be used along the lines of educational, research, or experimental purposes only.
