@@ -87,7 +87,7 @@ async function askQuestion() {
 askQuestion();
 ```
 
-#### askQuestion Response -
+#### Response (askQuestion) -
 
 > "In a nutshell, I'm Google's AI helper you can chat with.
 I can answer your questions, generate creative text formats, and help you with various tasks in a simple and informative way.
@@ -139,7 +139,7 @@ async function askQuestionWithImage() {
 askQuestionWithImage();
 ```
 
-#### askQuestionWithImage Response -
+#### Response (askQuestionWithImage) -
 
 > "The image you sent me is the logo of Bard, a large language model chatbot developed by Google AI.
 The logo consists of two colorful stars, one in red and orange and the other in blue and green, on a gray background.
