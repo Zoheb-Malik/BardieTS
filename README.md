@@ -23,19 +23,19 @@ It provides simple, fast and powerful features for AI interactions, including th
 
 ### npm, pnpm, OR yarn
 
-#### npm:
+#### npm -
 
 ```bash
 npm i bardie-ts
 ```
 
-#### pnpm:
+#### pnpm -
 
 ```bash
 pnpm add bardie-ts
 ```
 
-#### yarn:
+#### yarn -
 
 ```bash
 yarn add bardie-ts
@@ -43,18 +43,20 @@ yarn add bardie-ts
 
 ## 💡 Examples Of Use
 
-### Simple Question (Typescript)
+### Simple Question
 
-```typescript
+```javascript
+// Typescript Method (import)
 import BardieTS from "bardieTS";
 
 const bard = new BardieTS();
 
+const options = {
+  ask: "Keep it simple... What is Google Bard?"
+};
+
 async function askQuestion() {
   try {
-    const options = {
-      ask: "Keep it simple... What is Google Bard?"
-    };
     const result = await bard.question(options);
     console.log(result.content);
   } catch (error: any) {
@@ -63,27 +65,49 @@ async function askQuestion() {
 };
 
 askQuestion();
+
+// Javascript Method (require)
+const BardieTS = require("bardie-ts");
+
+const bard = new BardieTS();
+
+const options = {
+  ask: "Keep it simple... What is Google Bard?"
+};
+
+async function askQuestion() {
+  try {
+    const result = await bard.question(options);
+    console.log(result.content);
+  } catch (error) {
+    console.error("Error:", error.message);
+  }
+};
+
+askQuestion();
 ```
 
-#### Response:
+#### askQuestion Response -
 
 > "In a nutshell, I'm Google's AI helper you can chat with.
 I can answer your questions, generate creative text formats, and help you with various tasks in a simple and informative way.
 Think of me as a friendly AI companion ready to assist you anytime!"
 
-### Question With Image (Typescript)
+### Question With Image
 
-```typescript
-import BardieTS from "bardieTS";
+```javascript
+// Typescript Method (import)
+import BardieTS from "bardie-ts";
 
 const bard = new BardieTS();
 
+const options = {
+  ask: "Keep it simple... What is this image?",
+  image: "https://i.imgur.com/OgoPlnf.png"
+};
+
 async function askQuestionWithImage() {
   try {
-    const options = {
-      ask: "Keep it simple... What is this image?",
-      image: "https://i.imgur.com/OgoPlnf.png"
-    };
     const result = await bard.question(options);
     console.log(result.content);
   } catch (error: any) {
@@ -92,9 +116,30 @@ async function askQuestionWithImage() {
 };
 
 askQuestionWithImage();
+
+// Javascript Method (require)
+const BardieTS = require("bardie-ts");
+
+const bard = new BardieTS();
+
+const options = {
+  ask: "Keep it simple... What is this image?",
+  image: "https://i.imgur.com/OgoPlnf.png"
+};
+
+async function askQuestionWithImage() {
+  try {
+    const result = await bard.question(options);
+    console.log(result.content);
+  } catch (error) {
+    console.error("Error:", error.message);
+  }
+};
+
+askQuestionWithImage();
 ```
 
-#### Response:
+#### askQuestionWithImage Response -
 
 > "The image you sent me is the logo of Bard, a large language model chatbot developed by Google AI.
 The logo consists of two colorful stars, one in red and orange and the other in blue and green, on a gray background.
@@ -106,7 +151,7 @@ If there are any bugs, please report them at [issues](https://github.com/Zoheb-M
 
 **Disclaimer:**
 This package utilises a third-party API that interacts with Google's Bard API.
-I have no affiliation with the creation of the endpoint (https://bard.rizzy.eu.org).
+I have no affiliation with the creation of the endpoint (<https://bard.rizzy.eu.org>).
 It is important to note that the usage of this package should ideally **not** be intended for commercial purposes or the provision of services for profit.
 BardieTS should preferably be used along the lines of educational, research, or experimental purposes only.
 
