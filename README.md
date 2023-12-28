@@ -21,6 +21,8 @@ It provides simple, fast and powerful features for AI interactions, including th
 
 ## 📂 BardieTS Installation
 
+You **MUST** have [Node.js](https://nodejs.org/en/download) installed on your system for BardieTS to work.
+
 ### npm, pnpm, OR yarn
 
 #### npm -
@@ -43,10 +45,14 @@ yarn add bardie-ts
 
 ## 💡 Examples Of Use
 
-### Simple Question
+### Asking A Simple Question
 
-```javascript
-// Typescript Method (import)
+#### Typescript Usage -
+
+To use BardieTS in typescript, create a file named `index.ts` in your project's root directory and make sure you have `ts-node` (or equivalent) installed.
+Once you have an `index.ts` file with the contents below, execute `ts-node index.ts` in your terminal.
+
+```typescript
 import BardieTS from "bardieTS";
 
 const bard = new BardieTS();
@@ -65,8 +71,14 @@ async function askQuestion() {
 };
 
 askQuestion();
+```
 
-// Javascript Method (require)
+#### Javascript Usage -
+
+To use BardieTS in javascript, create a file named `index.js` in your project's root directory. You should already have `node` installed.
+Once you have an `index.js` file with the contents below, execute `node index.js` in your terminal.
+
+```javascript
 const BardieTS = require("bardie-ts");
 
 const bard = new BardieTS();
@@ -79,16 +91,17 @@ async function askQuestion() {
 askQuestion();
 ```
 
-#### Response (askQuestion) -
+#### Response:
 
 > "In a nutshell, I'm Google's AI helper you can chat with.
 I can answer your questions, generate creative text formats, and help you with various tasks in a simple and informative way.
 Think of me as a friendly AI companion ready to assist you anytime!"
 
-### Question With Image
+### Asking A Question With Image Input
 
-```javascript
-// Typescript Method (import)
+#### Typescript Usage -
+
+```typescript
 import BardieTS from "bardie-ts";
 
 const bard = new BardieTS();
@@ -108,8 +121,11 @@ async function askQuestionWithImage() {
 };
 
 askQuestionWithImage();
+```
 
-// Javascript Method (require)
+#### Javascript Usage -
+
+```javascript
 const BardieTS = require("bardie-ts");
 
 const bard = new BardieTS();
@@ -122,7 +138,7 @@ async function askQuestionWithImage() {
 askQuestionWithImage();
 ```
 
-#### Response (askQuestionWithImage) -
+#### Response:
 
 > "The image you sent me is the logo of Bard, a large language model chatbot developed by Google AI.
 The logo consists of two colorful stars, one in red and orange and the other in blue and green, on a gray background.
