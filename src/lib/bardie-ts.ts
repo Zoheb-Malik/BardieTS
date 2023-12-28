@@ -55,18 +55,20 @@ class BardieTS {
     * @description Asking a question without an image (Example 1)
     * @example 
     * ```typescript
-    * import BardieTS from "bardieTS";
+    * import BardieTS from "bardie-ts"; // Use "require" for javascript
     * 
     * const bard = new BardieTS();
     * 
+    * const options = {
+    *  ask: "Keep it simple... What is this image?",
+    *  image: "https://i.imgur.com/OgoPlnf.png"
+    * };
+    * 
     * async function askQuestion() {
     *   try {
-    *     const options = {
-    *       ask: "Keep it simple... What is Google Bard?"
-    *     };
     *     const result = await bard.question(options);
     *     console.log(result.content);
-    *   } catch (error: any) {
+    *   } catch (error: any) { // Remove typing for javascript
     *     console.error("Error:", error.message);
     *   }
     * };
@@ -80,19 +82,20 @@ class BardieTS {
     * @description Optionally asking a question with an image (Example 2)
     * @example 
     * ```typescript
-    * import BardieTS from "bardieTS";
+    * import BardieTS from "bardie-ts"; // Use "require" for javascript
     * 
     * const bard = new BardieTS();
     * 
+    * const options = {
+    *  ask: "Keep it simple... What is this image?",
+    *  image: "https://i.imgur.com/OgoPlnf.png"
+    * };
+    * 
     * async function askQuestionWithImage() {
     *   try {
-    *     const options = {
-    *       ask: "Keep it simple... What is this image?",
-    *       image: "https://i.imgur.com/OgoPlnf.png"
-    *     };
     *     const result = await bard.question(options);
     *     console.log(result.content);
-    *   } catch (error: any) {
+    *   } catch (error: any) { // Remove typing for javascript
     *     console.error("Error:", error.message);
     *   }
     * };
