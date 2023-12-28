@@ -1,10 +1,6 @@
 # <a href="https://github.com/Zoheb-Malik/BardieTS"><img src="https://i.imgur.com/5wcvFUB.png" width="25px" height="25px" alt="BardieTS" /></a> BardieTS
 
-<p align="center">
-  <a target="_blank" href="https://github.com/Zoheb-Malik/BardieTS">
-    <img src="https://i.imgur.com/5wcvFUB.png" alt="BardieTS" width="169" />
-  </a>
-</p>
+![BardieTS](https://socialify.git.ci/Zoheb-Malik/BardieTS/image?description=1&descriptionEditable=A%20powerful%20AI%20package%20(built%20using%20typescript)%0AInspired%20by%20%40rizzlogy%2Fbardie%2C%20for%20interacting%20with%20the%20Google%20Bard%20API.&font=Inter&language=1&logo=https%3A%2F%2Fsvgshare.com%2Fi%2F11JZ.svg&name=1&owner=1&pattern=Circuit%20Board&theme=Dark)
 
 ## 📦 bardie-ts
 
