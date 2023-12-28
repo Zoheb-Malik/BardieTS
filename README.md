@@ -15,9 +15,9 @@ It provides simple, fast and powerful features for AI interactions, including th
 
 * 🤖 Answers question with AI assistance
 * 🖼️ Image recognition with descriptive responses
-* 👨‍💻 Simple to integrate into to any app
+* 💻 Simple to integrate into to any app
 * 🖋️ Designed with broad compatibility works with all major module types, including (but not limited to) CommonJS, AMD, UMD, and ES6
-* 📝 Extremely well-documented
+* 📝 Extremely well-documented codebase
 
 ## 📂 BardieTS Installation
 
