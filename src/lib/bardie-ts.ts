@@ -48,14 +48,16 @@ class BardieTS {
         return response.data;
       } catch (error: any) {
         if (error.response && (error.response.status === 503 || error.response.status === 504)) {
-          console.error(`Status Code: \x1b[33m${error.response.status}\n\x1b[0m`);
+          if (error.response.status !== 503) {
+            console.error(`Status Code: \x1b[33m${error.response.status}\n\x1b[0m`);
+          }
           continue;
         } else {
           console.error(error.message);
         }
       }
     }
-    throw new Error("\x1b[31mThe request to Google Bard's API has failed... If the latest status error code is 504, try asking without image input. Otherwise, please try again later.\x1b[0m");
+    throw new Error("\x1b[31mThe request to Google Bard's API has failed... If the status error code is 504, try asking without image input. Otherwise, please try again later.\x1b[0m");
   }
 
   /**
