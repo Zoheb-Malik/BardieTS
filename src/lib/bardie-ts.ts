@@ -54,7 +54,7 @@ class BardieTS {
         }
       }
     }
-    throw new Error("The request to Google Bard's API has failed... If the status error code is 504, then try asking without image input, otherwise, please try again later.");
+    throw new Error("The request to Google Bard's API has failed... If the status error code is 504, try asking without image input. Otherwise, please try again later.");
   }
 
   /**
