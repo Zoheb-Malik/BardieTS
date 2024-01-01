@@ -50,11 +50,11 @@ class BardieTS {
         if (error.response && (error.response.status === 503 || error.response.status === 504)) {
           continue;
         } else {
-          throw new Error(error.message);
+          console.error(error.message);
         }
       }
     }
-    throw new Error("The request to Google Bard's API has failed... Please try again later.");
+    throw new Error("The request to Google Bard's API has failed... If the status error code is 504, then try asking without image input, otherwise, please try again later.");
   }
 
   /**
