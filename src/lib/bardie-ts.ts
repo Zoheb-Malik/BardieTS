@@ -1,14 +1,8 @@
 import axios from "axios";
 import { questionOptions, AIResponse, AIResponseData } from "../interfaces";
 
-const baseurl = "https://bard.rizzy.eu.org";
-
-const headers = {
-  "Content-Type": "application/json",
-  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-  Origin: baseurl,
-  Referer: `${baseurl}/`
-};
+const primaryBaseUrl = "https://bard.rizzy.eu.org";
+const fallbackBaseUrl = "https://bardie.vercel.app";
 
 class BardieTS {
   constructor() {}
@@ -38,13 +32,28 @@ class BardieTS {
     * @returns {Promise<AIResponse>} The response from the AI.
     * @throws {Error} Throws an error if the API is down.
    */
-  private async makeRequest(options: questionOptions): Promise<AIResponse> {
+  private async makeRequest(options: questionOptions): Promise<AIResponseData> {
     const requestData = { ask: options.ask, image: options.image || null };
-    try {
-      return await axios.post(`${baseurl}/backend/conversation/${options.image ? "image" : ""}`, requestData, { headers });
-    } catch (err: any) {
-      throw new Error("Error: " + err.message);
+    const baseurls = [primaryBaseUrl, fallbackBaseUrl];
+    for (const baseurl of baseurls) {
+      try {
+        const headers = {
+          "Content-Type": "application/json",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+          Origin: baseurl,
+          Referer: `${baseurl}/`
+        };
+        const response: AIResponse = await axios.post(`${baseurl}/backend/conversation/${options.image ? "image" : ""}`, requestData, { headers });
+        return response.data;
+      } catch (error: any) {
+        if (error.response && error.response.status === (503 || 504)) {
+          continue;
+        } else {
+          throw new Error(error.message);
+        }
+      }
     }
+    throw new Error("The request to Google Bard's API has failed... Please try again later.");
   }
 
   /**
@@ -114,8 +123,8 @@ class BardieTS {
   */
   async question(options: questionOptions): Promise<AIResponseData> {
     this.validateOptions(options);
-    const response: AIResponse = await this.makeRequest(options);
-    return response.data;
+    const response = await this.makeRequest(options);
+    return response;
   }
 }
 
