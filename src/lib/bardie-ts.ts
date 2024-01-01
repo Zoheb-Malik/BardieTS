@@ -47,7 +47,7 @@ class BardieTS {
         const response: AIResponse = await axios.post(`${baseurl}/backend/conversation/${options.image ? "image" : ""}`, requestData, { headers });
         return response.data;
       } catch (error: any) {
-        if (error.response && error.response.status === (503 || 504)) {
+        if (error.response && (error.response.status === 503 || error.response.status === 504)) {
           continue;
         } else {
           throw new Error(error.message);
