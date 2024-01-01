@@ -1,6 +1,6 @@
 {
   "name": "bardie-ts",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A powerful AI package (built using typescript) for interacting with the Google Bard API, without needing to set your own cookie!",
   "main": "./dist/bardie-ts.js",
   "module": "./dist/bardie-ts.mjs",
