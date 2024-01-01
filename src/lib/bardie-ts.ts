@@ -1,5 +1,6 @@
 import axios from "axios";
 import { questionOptions, AIResponse, AIResponseData } from "../interfaces";
+import { checkBardieTSVersion } from "../utils/BTSVersionChecker";
 
 const primaryBaseUrl = "https://bard.rizzy.eu.org";
 const fallbackBaseUrl = "https://bardie.vercel.app";
@@ -127,5 +128,7 @@ class BardieTS {
     return response;
   }
 }
+
+checkBardieTSVersion();
 
 export = BardieTS;
